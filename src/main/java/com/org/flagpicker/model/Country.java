@@ -9,7 +9,7 @@ public class Country {
 	public Country() {}
 	
 	public Country(int countryId, String countryName, String countryFlag) {
-		super();
+		
 		this.countryId = countryId;
 		this.countryName = countryName;
 		this.countryFlag = countryFlag;
@@ -37,5 +37,11 @@ public class Country {
 
 	public void setCountryFlag(String countryFlag) {
 		this.countryFlag = countryFlag;
+	}
+
+	@Override
+	public String toString() {
+		return "Country [countryId=" + countryId + ", countryName=" + countryName + ", countryFlag=" + countryFlag
+				+ "]";
 	}
 }

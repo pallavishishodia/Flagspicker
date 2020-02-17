@@ -9,7 +9,7 @@ public class Continent {
 	}
 
 	public Continent(int continentId, String continent) {
-		super();
+
 		this.continentId = continentId;
 		this.continent = continent;
 	}
@@ -30,4 +30,8 @@ public class Continent {
 		this.continent = continent;
 	}
 
+	@Override
+	public String toString() {
+		return "Continent [continentId=" + continentId + ", continent=" + continent + "]";
+	}
 }
